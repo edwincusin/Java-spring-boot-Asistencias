@@ -8,8 +8,16 @@ public class Asistencia {
 	private LocalDateTime fechaHoraRegistro;
 	private String estado; // P-Presente A-Ausent
 
-	public Asistencia(LocalDate now, LocalDateTime now2, String string) {
-		// TODO Auto-generated constructor stub
+
+
+	public Asistencia() {
+	}
+
+	public Asistencia(LocalDate fechaClase, LocalDateTime fechaHoraRegistro, String estado) {
+		super();
+		this.fechaClase = fechaClase;
+		this.fechaHoraRegistro = fechaHoraRegistro;
+		this.estado = estado;
 	}
 
 	public LocalDate getFechaClase() {
