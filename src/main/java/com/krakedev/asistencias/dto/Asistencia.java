@@ -5,9 +5,11 @@ import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
+@AllArgsConstructor // sonctructor con todos los atributos
+@NoArgsConstructor // constructor vacio
 public class Asistencia {
 	private LocalDate fechaClase;
 	private LocalDateTime fechaHoraRegistro;

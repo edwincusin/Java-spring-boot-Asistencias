@@ -2,9 +2,11 @@ package com.krakedev.asistencias.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
+@AllArgsConstructor // sonctructor con todos los atributos
+@NoArgsConstructor // constructor vacio
 public class Estudiante {
 	//ATRIBUTOS
 	private String cedula;
