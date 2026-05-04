@@ -14,8 +14,9 @@ import com.krakedev.asistencias.dto.RegistroAsistencia;
 public class ServicioAsistencia {
 	private ArrayList<RegistroAsistencia> registros = new ArrayList<>();
 
-	private final ServicioEstudiantes servicioEstudiantes;//NO ES NECESARIO INICIALIZAR SPRINGBOOT LO HACE AUT
+	private final ServicioEstudiantes servicioEstudiantes;// Servicio inyectado por Spring (no se instancia manualmente)
 
+	// Constructor usado para la inyección de dependencias
 	public ServicioAsistencia(ServicioEstudiantes servicioEstudiantes) {
 		this.servicioEstudiantes = servicioEstudiantes;
 	}
