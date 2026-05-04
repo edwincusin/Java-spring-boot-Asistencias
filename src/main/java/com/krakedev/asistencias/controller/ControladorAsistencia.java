@@ -22,15 +22,15 @@ public class ControladorAsistencia {
 		this.servicioAsistencia=servicioAsistencia;
 	}
 	
-	// ENDPOINTS
-	
+	// ENDPOINTS	
 	@PostMapping("/{cedula}")
 	public RegistroAsistencia registrarAsistencia(@PathVariable String cedula) {
 		return servicioAsistencia.registrarAsistencia(cedula);
 	}
 	
 	@GetMapping("/{cedula}")
-	public ArrayList<Asistencia> consultarAsistencia(@PathVariable String Cedula){
-		return servicioAsistencia.consultarAsistencia(Cedula);
+	public ArrayList<Asistencia> consultarAsistencia(@PathVariable String cedula){
+		return servicioAsistencia.consultarAsistencia(cedula);
 	}
+	
 }
